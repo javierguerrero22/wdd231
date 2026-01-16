@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Javier Guerrero">
+        <meta name="description" content="This page is for let you know more about our team">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javier's Site</title>
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Serif+Text:ital@0;1&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/course.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <img src="images/guitar.svg" alt="Site Logo" width="100" height="100">
+                <span>Javier's Site Title</span>
+                <button id="ham-btn" class="hamburger"></button>
+            </div>
+            
+            <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#">Chamber Project</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h1>Home</h1>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum omnis ipsa accusantium aliquid ut. Molestiae consectetur enim sed porro animi magni maiores vel repellendus accusantium. Atque sequi delectus beatae eveniet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam architecto consequuntur laborum aspernatur esse, at accusantium? Ducimus possimus quam totam beatae ullam dolores, maxime, aut natus eius provident a temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi qui aliquam illum saepe, fuga deleniti minus fugiat eum asperiores perspiciatis optio? Accusamus soluta optio non, aliquid illum unde explicabo eum.</p>
+            </section>
+            <section>
+                <h2>Student Photo</h2>
+                <img src="images/javier.jpg" alt="student photo" id="photo">
+            </section>
+            <section id="courses">
+                <h2>Web Certificate Courses</h2>
+                <div class="filter">
+                    <button id="all">ALL</button>
+                    <button id="cse">CSE</button>
+                    <button id="wdd">WDD</button>
+                </div>
+                <p id="total-courses"><span></span></p>
+                <div class="certificate courses">
+
+                </div>
+            </section>
+            
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100006197227926">
+                    <img src="images/facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://github.com/javierguerrero22">
+                    <img src="images/github.svg" alt="Github">
+                </a>
+                <a href="https://www.linkedin.com/in/javier-alejandro-guerrero-jimenez/">
+                    <img src="images/linkedin.svg" alt="Linkedin">
+                </a>
+            </div>
+            <div class="current year">
+                <p>© <span id="year"></span> 🐲 Javier Guerrero 🐲 Monagas, Venezuela</p>
+            </div>
+            <p class="last modified" id="lastModified"></p>
+        </footer>
+    </body>
+</html>

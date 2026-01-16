@@ -1,0 +1,191 @@
+:root{
+    --primary-color: #29a6d3;
+    --secundary-color: #c7e5eb;
+    --third-color: #edbc9c;
+
+}
+*{
+    box-sizing: border-box;
+    font-family: 'lexend', sans-serif;
+}
+/************************* HEADER *************************/
+header{
+    align-items: end; 
+    /* border-bottom: solid 1px #b7d5d7;  */
+}
+
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    /* margin: 0 0 5px 10px; */
+    /* margin-left: 10px;
+    margin-bottom: 5px; */
+}
+
+header span { 
+    font-size: 2rem; 
+    color: black;
+    font-family: 'Caveat brush', 'lexend', sans-serif;
+    /* justify-content: center; */
+    display: flex;
+    align-items: center;
+    /* grid-column: 2/4; */
+}
+.header{
+    display: grid;
+    grid-template-columns: 44px auto 44px;
+    background-image: linear-gradient( var(--primary-color),var(--secundary-color));
+    padding: 5px;
+    column-gap: 8px;
+}
+/************************* HAMBURGER *************************/
+
+.hamburger{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.hamburger::before{
+    content: "\2630";
+    
+}
+.hamburger.show::before{
+    content: '\00d7';
+
+}
+/************************* NAVIGATION *************************/
+
+.navigation{
+    display: none;
+    grid-column: 1/4;
+    width: 100%;
+    font-family: 'Caveat brush', 'lexend', sans-serif;
+    background-color: white;
+}
+.navigation.show{
+    display: block;
+}
+.navigation ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation ul a{
+    display: block;
+    padding: 0.8rem 10px;
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    border-bottom: solid 1px #b7d5d7; 
+}
+.navigation li.current{
+    background-color: #b7d5d7;
+}
+.navigation li:hover{
+     background-color: var(--third-color);/*#2f7889 */
+     text-decoration: underline;
+}
+/************************* Titles *************************/
+h1{
+    margin-left: 10px;
+}
+h2{
+    background-image: linear-gradient( var(--primary-color),var(--secundary-color), var(--primary-color));
+    margin: 0;
+    padding: 5px;
+}
+h1, h2{
+    font-family: 'DM serif text', 'lexend', serif;
+}
+
+/************************* Main *************************/
+
+section{
+    margin: 15px 10px;
+    text-align: center;
+    background-color: var(--secundary-color);
+}
+section p{
+    margin: 0;
+    padding: 10px;
+}
+#photo{
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    padding: 10px;
+}
+#courses{
+    background-color: white;
+}
+.course-card{
+    background-color: var(--third-color);
+}
+.courses p{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    /* background-color: ; */
+}
+.courses p, .filter button{
+    margin: 10px 10px;
+    padding: 10px 0;
+}
+.completed {
+    background-color: var(--secundary-color);
+    /* background-color: #a8d1e0; */
+}
+.completed::before{
+    content: '✓ ';
+}
+.filter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 10px;
+    
+}
+.filter button{
+    border: 1px solid #000000;
+    border-radius: 7.5px;
+    cursor: pointer;
+    background-color: #4ebbce;
+}
+.filter button:hover{
+    background-color: var(--third-color);
+}
+/************************* Footer *************************/
+
+footer{
+    background-color: #eee;
+    padding-bottom: 1rem ;
+    text-align: center;
+    font-family: 'Caveat brush', 'lexend', sans-serif;
+    background-image: linear-gradient( var(--primary-color),var(--secundary-color),var(--primary-color));
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    /* margin: 15px 0; */
+    padding: 15px;
+    background-color: white;
+}
+.social a{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    border: #ccc dashed 1px;
+    border-radius: 50%;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+.social a:hover{
+    background-color: #ddd;
+}
