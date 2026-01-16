@@ -56,7 +56,7 @@
   }
   .navigation {
         display: block;
-        position: static; /* Volvemos al flujo normal */
+        position: static;
         width: auto;
         background: none;
     }
