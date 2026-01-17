@@ -1,0 +1,33 @@
+{
+    "familyName": "jiménez",
+    "dateMoved": 2010,
+    "quantity": 5,
+    "visited": true,
+    "memberData":[
+        {
+            "name": "Alexis Jiménez",
+            "gender": "male",
+            "birthday": "1957-06-03"
+        },
+        {
+        "name": "Angélica Martínez de Jiménez",
+        "gender": "Female",
+        "birthdate": "1965-17-10"
+        },
+        {
+        "name": "Yunelys Jiménez",
+        "gender": "Female",
+        "birthdate": "1984-01-05"
+        },
+        {
+        "name": "Diana Zacarías",
+        "gender": "Female",
+        "birthdate": "2017-15-12"
+        },
+        {
+        "name": "Javier Guerrero",
+        "gender": "Male",
+        "birthdate": "2007-22-01"
+        }
+]
+}
