@@ -171,10 +171,11 @@ h2 {
 		display: grid;
 		grid-template-columns: 2fr 1.5fr 1fr 1fr;
 		margin: 0;
-		padding: 0.25rem;
+		padding: 2px .25rem;
         background-color: var(--secundary-color);
         align-items: center;
         justify-items: left;
+
 }        
 		.list section img, p, h3 {
 			margin: 0 1rem;

@@ -61,6 +61,9 @@ h1{
 .grid{
     grid-template-columns: 1fr 1fr;
 }
+.list section{
+    padding: 1.2rem 0.25rem;
+}
         .list section h3 {
 			font-size: 1rem;
             
