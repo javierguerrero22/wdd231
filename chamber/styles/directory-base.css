@@ -30,6 +30,7 @@ header img{
     grid-template-columns: 60px auto 44px;
     background-image: linear-gradient( var(--primary-color),var(--secundary-color));
     padding: 5px;
+    padding-left: 1.5rem;
     column-gap: 8px;
 }
 h1, h2, h3{
