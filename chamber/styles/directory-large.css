@@ -45,13 +45,13 @@
     .navigation li.current{
         background-color: transparent;
 
-        a{
+        & a{
             color: rgb(0, 0, 136);
         }
     }
     .navigation li:hover{
         background-color: transparent;
-        a {
+        & a {
            color: black; 
         }
         
@@ -64,14 +64,14 @@ h1{
     grid-template-columns: 1fr 1fr;
 }
 .list{
-    section{
-        h3 {
+    & section{
+        & h3 {
 			font-size: 1rem;
             
 
 		}
         
-        p, a{
+        & p, & a{
             font-size: 0.9rem;
             
             
