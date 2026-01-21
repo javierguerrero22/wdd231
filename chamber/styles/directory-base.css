@@ -120,57 +120,55 @@ section {
 	
 	
 	text-align: center;
-
-	a {
+}
+section	a {
 		font-family: Arial, sans-serif;
 		font-size: 0.85rem;
 		color: navy;
 	}
 
-	h3 {
+section	h3 {
 		font-size: 1.5rem;
 	}
-}
+
 .grid {
 	display: grid;
 	grid-gap: 15px;
 	align-items: stretch;
-
-    section {
+}
+.grid section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         background-image: linear-gradient( var(--primary-color),var(--secundary-color));
         padding: 1rem;
         border: 1px solid #ccc;
-    }
-	section {
-		text-align: center;
+        text-align: center;
         align-items: center;
-        
-		& > * {
+}
+.grid img, p, h3 {
 			margin: 0.1rem;
 		}
-	}
+	
 
-	img {
+.grid img {
 		border: 1px solid #fff;
 		box-shadow: 0 0 1rem #555;
         
 	}
-}
+
 .grid section:hover {
     transform: translateY(-5px);
 }
-h3 {
+h2 {
 	font-size: 1rem;
 }
 
 .list {
 	display: flex;
 	flex-direction: column;
-
-	section {
+}
+.list section {
 		display: grid;
 		grid-template-columns: 2fr 1.5fr 1fr 1fr;
 		margin: 0;
@@ -178,43 +176,37 @@ h3 {
         background-color: var(--secundary-color);
         align-items: center;
         justify-items: left;
-        
-		& > * {
+}        
+		.list section img, p, h3 {
 			margin: 0 1rem;
-            
 		}
 
-		img {
+		.list section img {
 			display: none;
 		}
 
-		h3 {
+		.list section h3 {
 			font-size: 0.7rem;
      
 
 		}
-        a{
+        .list section a{
             display: block;
             max-width: 75%;
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        p, a{
+        .list section p, a{
             font-size: 0.6rem;
            
         }
-		&:nth-child(even) {
+		.list section:nth-child(even) {
 			background-color:#c7d3eb;
 		}
-	}
-}
+	
+
 .list section :nth-child(6) { display: none; }
 
-h2 {
-    text-align: center;
-    font-size: 1.8em;
-    padding-bottom: 5px;
-}
 
 footer {
     padding: 20px ;

@@ -44,51 +44,40 @@
     }
     .navigation li.current{
         background-color: transparent;
-
-        & a{
+}
+        .navigation li.current a{
             color: rgb(0, 0, 136);
         }
-    }
+    
     .navigation li:hover{
         background-color: transparent;
-        & a {
-           color: black; 
-        }
-        
     }
-
+    .navigation li a:hover {
+         color: black; 
+    }
 h1{
     font-size: xxx-large;
 }
 .grid{
     grid-template-columns: 1fr 1fr;
 }
-.list{
-    & section{
-        & h3 {
+        .list section h3 {
 			font-size: 1rem;
             
 
 		}
         
-        & p, & a{
+        .list section p, a{
             font-size: 0.9rem;
             
             
 
         }
-}}
+
 section{
     padding: 10px;
 }
 
-h2 {
-    background-color: var(--fourth-color);
-    padding: 0 20px;
-    text-align: start;
-    font-size: 35px;
-    
-}
 footer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
