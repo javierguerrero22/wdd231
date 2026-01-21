@@ -1,0 +1,244 @@
+:root {
+    --primary-color: #29a6d3;
+    --secundary-color: #c7e5eb;
+    --third-color: #edbc9c;
+    --body-font: sansita, sans-serif;
+    --h-font: 'sansita Swashed', serif;
+}
+*{
+    margin: 0;
+    font-family: var(--body-font);
+}
+header span { 
+    font-size: 1.3rem; 
+    color: black;
+    font-family: 'Caveat brush', 'lexend', sans-serif;
+    
+    display: flex;
+    align-items: center;
+    
+}
+header img{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 25%;
+    
+}
+.header{
+    display: grid;
+    grid-template-columns: 60px auto 44px;
+    background-image: linear-gradient( var(--primary-color),var(--secundary-color));
+    padding: 5px;
+    column-gap: 8px;
+}
+h1, h2, h3{
+    font-family: var(--h-font);
+}
+h1{
+    font-size: 40px;
+    
+}
+/************************* HAMBURGER *************************/
+
+.hamburger{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0;
+}
+.hamburger::before{
+    content: "\2630";
+    
+}
+.hamburger.show::before{
+    content: '\00d7';
+
+}
+/************************* NAVIGATION *************************/
+
+.navigation{
+    display: none;
+    grid-column: 1/4;
+    width: 100%;
+    font-family: 'Caveat brush', 'lexend', sans-serif;
+    background-color: white;
+}
+.navigation.show{
+    display: block;
+}
+.navigation ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.navigation ul a{
+    display: block;
+    padding: 0.8rem 10px;
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    border-bottom: solid 1px #b7d5d7; 
+}
+.navigation li.current{
+    background-color: #b7d5d7;
+}
+.navigation li:hover{
+     background-color: var(--third-color);
+     text-decoration: underline;
+}
+main {
+	margin: 0 auto;
+	padding: 0 1.5rem 2.5rem;
+
+	background-color: #fff;
+	font-family: Acme, Arial, sans-serif;
+}
+
+.menu {
+	margin: 1rem auto;
+	padding: 0.5rem;
+	background-image: linear-gradient( var(--primary-color),var(--secundary-color),var(--primary-color));
+	text-align: center;
+}
+	button {
+		padding: 0.5rem 1rem;
+		font-weight: 700;
+	}
+.menu button:hover{
+    background-color: var(--third-color);
+}
+section{
+    padding: 30px 20px;
+    
+}
+section {
+	border: 1px solid rgb(0 0 0 / 10%);
+	
+	
+	text-align: center;
+
+	a {
+		font-family: Arial, sans-serif;
+		font-size: 0.85rem;
+		color: navy;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
+}
+.grid {
+	display: grid;
+	grid-gap: 15px;
+	align-items: stretch;
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: linear-gradient( var(--primary-color),var(--secundary-color));
+        padding: 1rem;
+        border: 1px solid #ccc;
+    }
+	section {
+		text-align: center;
+        align-items: center;
+        
+		& > * {
+			margin: 0.1rem;
+		}
+	}
+
+	img {
+		border: 1px solid #fff;
+		box-shadow: 0 0 1rem #555;
+        
+	}
+}
+.grid section:hover {
+    transform: translateY(-5px);
+}
+h3 {
+	font-size: 1rem;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+
+	section {
+		display: grid;
+		grid-template-columns: 2fr 1.5fr 1fr 1fr;
+		margin: 0;
+		padding: 0.25rem;
+        background-color: var(--secundary-color);
+        align-items: center;
+        justify-items: left;
+        
+		& > * {
+			margin: 0 1rem;
+            
+		}
+
+		img {
+			display: none;
+		}
+
+		h3 {
+			font-size: 0.7rem;
+     
+
+		}
+        a{
+            display: block;
+            max-width: 75%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        p, a{
+            font-size: 0.6rem;
+           
+        }
+		&:nth-child(even) {
+			background-color:#c7d3eb;
+		}
+	}
+}
+.list section :nth-child(6) { display: none; }
+
+h2 {
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 5px;
+}
+
+footer {
+    padding: 20px ;
+    text-align:left;
+    font-size: 15px;
+    min-height: auto;
+    font-family: 'Caveat brush', 'lexend', sans-serif;
+    background-image: linear-gradient( var(--secundary-color),var(--primary-color));
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    padding: 15px;
+}
+
+.social img{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+.social img:hover{
+    background-color: #ccc;
+}
+#linkedin{
+    border-radius: 6px;
+}

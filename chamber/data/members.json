@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Maturin Tech Solutions",
+    "address": "123 Innovation Drive, Maturin, Monagas",
+    "phone": "(+58) 291-555-0101",
+    "website": "https://maturintech.example.com",
+    "image": "../images/tech-solutions.jpg",
+    "membershipLevel": 3,
+    "tagline": "Innovative software for a digital world"
+  },
+  {
+    "name": "Golden Grain Bakery",
+    "address": "456 Sunrise Blvd, Maturin, Monagas",
+    "phone": "(+58) 291-555-0202",
+    "website": "https://goldengrain.example.com",
+    "image": "../images/golden-grain-bakery.jpg",
+    "membershipLevel": 2,
+    "tagline": "Freshly baked daily with local ingredients"
+  },
+  {
+    "name": "Savvy Marketing Agency",
+    "address": "789 Creative Plaza, Maturin, Monagas",
+    "phone": "(+58) 291-555-0303",
+    "website": "https://savvyagency.example.com",
+    "image": "../images/savvy.jpg",
+    "membershipLevel": 1,
+    "tagline": "Connecting brands with people"
+  },
+  {
+    "name": "Eco-Friendly Construction",
+    "address": "101 Green Way, Maturin, Monagas",
+    "phone": "(+58) 291-555-0404",
+    "website": "https://ecobuild.example.com",
+    "image": "../images/eco-friendly-construction.jpg",
+    "membershipLevel": 3,
+    "tagline": "Building a sustainable future together"
+  },
+  {
+    "name": "Monagas Auto Repair",
+    "address": "202 Fast Track Rd, Maturin, Monagas",
+    "phone": "(+58) 291-555-0505",
+    "website": "https://monagasauto.example.com",
+    "image": "../images/auto-repair.jpg",
+    "membershipLevel": 2,
+    "tagline": "Expert car care you can trust"
+  },
+  {
+    "name": "The Coffee Hub",
+    "address": "303 Espresso Lane, Maturin, Monagas",
+    "phone": "(+58) 291-555-0606",
+    "website": "https://coffeehub.example.com",
+    "image": "../images/the-coffe-hub.jpg",
+    "membershipLevel": 1,
+    "tagline": "The best beans in the state"
+  },
+  {
+    "name": "Blue Horizon Logistics",
+    "address": "404 Port Authority, Maturin, Monagas",
+    "phone": "(+58) 291-555-0707",
+    "website": "https://bluehorizon.example.com",
+    "image": "../images/blue-horizon-logistics.jpg",
+    "membershipLevel": 2,
+    "tagline": "Moving your business forward"
+  },
+  {
+    "name": "Urban Style Fashion",
+    "address": "505 Trendy St, Maturin, Monagas",
+    "phone": "(+58) 291-555-0808",
+    "website": "https://urbanstyle.example.com",
+    "image": "../images/urban-style.jpg",
+    "membershipLevel": 1,
+    "tagline": "Modern clothes for modern people"
+  },
+  {
+    "name": "Monagas Health Center",
+    "address": "606 Wellness Ave, Maturin, Monagas",
+    "phone": "(+58) 291-555-0909",
+    "website": "https://monagashealth.example.com",
+    "image": "../images/health-center.jpg",
+    "membershipLevel": 3,
+    "tagline": "Your health is our priority"
+  }
+]

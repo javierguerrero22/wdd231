@@ -1,0 +1,32 @@
+@media (min-width: 1100px){
+      header span{
+    font-size: 2.2rem;
+  }
+    .grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    section{
+        height: auto;
+        padding-top: 20px;
+    }
+    .list{
+    section{
+        grid-template-columns: 1.3fr 1.5fr 1fr 1fr;
+        h3 {
+			font-size: 1.2rem;
+            
+
+		}
+        
+        p, a{
+            font-size: 1.1rem;
+            
+            
+
+        }
+}}
+    h2 {
+        padding-left: 50px;
+    }
+    
+}
