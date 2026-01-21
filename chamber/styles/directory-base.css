@@ -152,7 +152,8 @@ section	h3 {
 .grid img {
 		border: 1px solid #fff;
 		box-shadow: 0 0 1rem #555;
-        
+        width: 200px;
+        height: auto;
 	}
 
 .grid section:hover {
