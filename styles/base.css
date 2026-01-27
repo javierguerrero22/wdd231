@@ -95,6 +95,7 @@ h2{
     background-image: linear-gradient( var(--primary-color),var(--secundary-color), var(--primary-color));
     margin: 0;
     padding: 5px;
+    border-radius: 20px 20px 0 0;
 }
 h1, h2{
     font-family: 'DM serif text', 'lexend', serif;
@@ -106,7 +107,10 @@ section{
     margin: 15px 10px;
     text-align: center;
     background-color: var(--secundary-color);
+    border-radius: 20px;
+    border: 1px solid #000000;
 }
+
 section p{
     margin: 0;
     padding: 10px;
@@ -153,6 +157,27 @@ section p{
 }
 .filter button:hover{
     background-color: var(--third-color);
+}
+dialog {
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 3rem #777;
+  width: 90%;
+  max-width: 600px;
+}
+
+::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
 }
 /************************* Footer *************************/
 

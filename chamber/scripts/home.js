@@ -4,7 +4,8 @@ const humidity = document.querySelector('#humidity');
 const sunrise = document.querySelector('#sunrise') ;
 const sunset = document.querySelector('#sunset') ;
 const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
+// const weatherIcon = document.querySelector('#weather-icon');
+const weatherInfo = document.querySelector('#weather-info');
 const captionDesc = document.querySelector('#figcaption');
 const todayW = document.querySelector('#today');
 const tomorrowW = document.querySelector('#tomorrow');
@@ -12,6 +13,8 @@ const afTomorrowW = document.querySelector('#after-tomorrow');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=9.73242&lon=-63.18773&units=metric&appid=bb9ac6af7d4ad12de0cee2bcb1ea8c0c';
 const urlForecast = 'https://api.openweathermap.org/data/2.5/forecast?lat=9.73242&lon=-63.18773&units=metric&appid=bb9ac6af7d4ad12de0cee2bcb1ea8c0c';
+
+
 
 async function apiFetch(){
     try{
@@ -54,6 +57,19 @@ async function displayResourcesForecast(data){
     afTomorrowW.innerHTML = `Day After Tomorrow: <span>${data.list[11].main.temp}&deg;C</span>`;
 }
 async function displayResources(data){
+
+    const weatherImg = document.createElement('img')
+    
+    weatherImg.id = 'weather-icon';
+
+    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    let desc = data.weather[0].description;
+
+    weatherImg.setAttribute('src', iconsrc);
+    weatherImg.setAttribute('alt', desc);
+
+    weatherInfo.prepend(weatherImg)
+
     const sunriseTimestamp = data.sys.sunrise;
     const sunriseDate = new Date(sunriseTimestamp * 1000);
     const sunriseTime = sunriseDate.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
@@ -64,10 +80,7 @@ async function displayResources(data){
 
      todayW.innerHTML = `Today: <span>${data.main.temp}&deg;C</span>`;
     currentTemp.innerHTML = `${data.main.temp}&deg;C`;
-  const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  let desc = data.weather[0].description;
-
-//   today.innerHTML = `Hight: ${data.main.temp_max}&deg;C`;
+  
 
   maxTemp.innerHTML = `Hight: ${data.main.temp_max}&deg;C`;
   minTemp.innerHTML = `Low: ${data.main.temp_min}&deg;C`;
@@ -75,8 +88,6 @@ async function displayResources(data){
   sunrise.innerHTML = `Sunrise: ${sunriseTime}`;
   sunset.innerHTML = `Sunset: ${sunsetTime}`;
 
-  weatherIcon.setAttribute('src', iconsrc);
-  weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = `${desc}`;
 }
 
