@@ -1,5 +1,5 @@
 @media (min-width: 600px){
-
+/***************************************** HEADER **********************************************/
     nav{
         align-self: center;
     }
@@ -55,6 +55,8 @@
     .navigation li a:hover {
          color: black; 
     }
+
+
 h1{
     font-size: xxx-large;
 }
@@ -70,15 +72,23 @@ h1{
 
 		}
         
-        .list section p, a{
+        .list section p, .list section a{
             font-size: 0.9rem;
             
             
 
         }
 
-section{
-    padding: 10px;
+.weather{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.weather section{
+    margin: 20px;
+}
+.business{
+    padding: 0 50px;
 }
 
 footer{

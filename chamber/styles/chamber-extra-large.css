@@ -7,7 +7,6 @@
     }
     section{
         height: auto;
-        padding-top: 20px;
     }
     .list section{
         grid-template-columns: 1.3fr 1.5fr 1fr 1fr;}
@@ -17,13 +16,23 @@
 
 		}
         
-    .list section  p, a{
+    .list section  p, .list section a{
             font-size: 1.1rem;
             
             
 
         }
-
+    .weather{
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+    .business{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+    }
+    .business section{
+        margin: 20px;
+    }
     
     
 }

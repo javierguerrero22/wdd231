@@ -5,7 +5,7 @@
     "phone": "(+58) 291-555-0101",
     "website": "https://maturintech.example.com",
     "image": "../images/tech-solutions.jpg",
-    "membershipLevel": 3,
+    "membershipLevel": "Gold",
     "tagline": "Innovative software for a digital world"
   },
   {
@@ -14,7 +14,7 @@
     "phone": "(+58) 291-555-0202",
     "website": "https://goldengrain.example.com",
     "image": "../images/golden-grain-bakery.jpg",
-    "membershipLevel": 2,
+    "membershipLevel": "Silver",
     "tagline": "Freshly baked daily with local ingredients"
   },
   {
@@ -23,7 +23,7 @@
     "phone": "(+58) 291-555-0303",
     "website": "https://savvyagency.example.com",
     "image": "../images/savvy.jpg",
-    "membershipLevel": 1,
+    "membershipLevel": "Bronze",
     "tagline": "Connecting brands with people"
   },
   {
@@ -32,7 +32,7 @@
     "phone": "(+58) 291-555-0404",
     "website": "https://ecobuild.example.com",
     "image": "../images/eco-friendly-construction.jpg",
-    "membershipLevel": 3,
+    "membershipLevel": "Gold",
     "tagline": "Building a sustainable future together"
   },
   {
@@ -41,7 +41,7 @@
     "phone": "(+58) 291-555-0505",
     "website": "https://monagasauto.example.com",
     "image": "../images/auto-repair.jpg",
-    "membershipLevel": 2,
+    "membershipLevel": "Silver",
     "tagline": "Expert car care you can trust"
   },
   {
@@ -50,7 +50,7 @@
     "phone": "(+58) 291-555-0606",
     "website": "https://coffeehub.example.com",
     "image": "../images/the-coffe-hub.jpg",
-    "membershipLevel": 1,
+    "membershipLevel": "Bronze",
     "tagline": "The best beans in the state"
   },
   {
@@ -59,7 +59,7 @@
     "phone": "(+58) 291-555-0707",
     "website": "https://bluehorizon.example.com",
     "image": "../images/blue-horizon-logistics.jpg",
-    "membershipLevel": 2,
+    "membershipLevel": "Silver",
     "tagline": "Moving your business forward"
   },
   {
@@ -68,7 +68,7 @@
     "phone": "(+58) 291-555-0808",
     "website": "https://urbanstyle.example.com",
     "image": "../images/urban-style.jpg",
-    "membershipLevel": 1,
+    "membershipLevel": "Bronze",
     "tagline": "Modern clothes for modern people"
   },
   {
@@ -77,7 +77,7 @@
     "phone": "(+58) 291-555-0909",
     "website": "https://monagashealth.example.com",
     "image": "../images/health-center.jpg",
-    "membershipLevel": 3,
+    "membershipLevel": "Gold",
     "tagline": "Your health is our priority"
   }
 ]

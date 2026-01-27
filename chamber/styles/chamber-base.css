@@ -8,6 +8,7 @@
 *{
     margin: 0;
     font-family: var(--body-font);
+    box-sizing: border-box;
 }
 header span { 
     font-size: 1.3rem; 
@@ -23,7 +24,7 @@ header img{
     width: 100%;
     height: auto;
     border-radius: 25%;
-    
+    border: 2px solid black;
 }
 .header{
     display: grid;
@@ -40,7 +41,7 @@ h1{
     font-size: 40px;
     
 }
-/************************* HAMBURGER *************************/
+/******************************************* HAMBURGER *******************************************/
 
 .hamburger{
     background: none;
@@ -57,7 +58,7 @@ h1{
     content: '\00d7';
 
 }
-/************************* NAVIGATION *************************/
+/**************************************** NAVIGATION ****************************************/
 
 .navigation{
     display: none;
@@ -91,7 +92,7 @@ h1{
      background-color: var(--third-color);
      text-decoration: underline;
 }
-main {
+.directory, .home {
 	margin: 0 auto;
 	padding: 0 1.5rem 2.5rem;
 
@@ -99,22 +100,136 @@ main {
 	font-family: Acme, Arial, sans-serif;
 }
 
+.hero{
+    position: relative;
+    /* display: inline-block; */
+}
+.hero picture img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.cta-button{
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background-color: var(--third-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+.home h2{
+    font-size: 25px;
+    justify-self: center;
+}
+.tagline{
+    font-size: smaller;
+    justify-self: center;
+}
+.business h2{
+    font-size: larger;
+}
+.business section > p{
+    margin-bottom: 5px;
+   justify-self: center;
+   font-size: small;
+}
+.business section{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding-top: 10px;
+    margin-top: 30px;
+    background-image:linear-gradient(rgb(148, 182, 241), var(--secundary-color) ) ;
+    align-items: center;
+    text-align: center;
+}
+.business-details img{
+    max-width: 200px;
+    /* min-width: 120px; */
+    /* justify-self: center; */
+    width: 100%;
+    height: auto;
+    border-radius: 20%;
+    padding: 10px;
+}
+.contact-info {
+    padding: 10px;
+    padding-left: 0;
+    font-size: 0.8rem;
+    min-width: 0;
+}
+.business-details{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-align: left;
+    border-top: 1px solid #555;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.business-details p{
+    grid-column: 2;
+}
+.contact-info a{
+    display: block;
+    max-width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ .business-details span{
+    font-weight: 800;
+}
+.weather section{
+    /* padding: 10px;
+    padding-top: 0; */
+    margin: 20px 0;
+    background-color: var(--secundary-color);
+    border-radius: 10px;
+}
+.weather h2{
+    background-image: linear-gradient( var(--primary-color), var(--secundary-color), var(--primary-color));
+    width: 100%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+#weather-info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    
+}
+#weather-info p{
+    grid-column: 2;
+    padding: 2px;
+}
+.weather h2{
+    padding: 10px 0;
+}
+ .weather p, #weather-info{
+    padding: 10px;
+}
+.weather-forecast p{
+    font-size: larger;
+}
+.weather-forecast span{
+    font-weight: 600;
+}
 .menu {
 	margin: 1rem auto;
 	padding: 0.5rem;
 	background-image: linear-gradient( var(--primary-color),var(--secundary-color),var(--primary-color));
 	text-align: center;
 }
-	button {
-		padding: 0.5rem 1rem;
-		font-weight: 700;
-	}
+button {
+	padding: 0.5rem 1rem;
+	font-weight: 700;
+}
 .menu button:hover{
     background-color: var(--third-color);
 }
 
-section {
-	border: 1px solid rgb(0 0 0 / 10%);
+.directory section {
+	/* border: 1px solid rgb(0, 0, 0); */
 	padding: 30px 20px;
 	
 	text-align: center;
@@ -144,7 +259,7 @@ section	h3 {
         text-align: center;
         align-items: center;
 }
-.grid img, p, h3 {
+.grid img, .grid p, .grid h3 {
 			margin: 0.1rem;
 		}
 	
@@ -177,7 +292,7 @@ h2 {
         justify-items: left;
 
 }        
-		.list section img, p, h3 {
+		.list section img, .list section p, .list section h3 {
 			margin: 0 1rem;
 		}
 
@@ -196,7 +311,7 @@ h2 {
             overflow: hidden;
             text-overflow: ellipsis;
         }
-        .list section p, a{
+        .list section p, .list section a{
             font-size: 0.6rem;
            
         }
@@ -207,6 +322,7 @@ h2 {
 
 .list section :nth-child(6) { display: none; }
 
+/*************************************** FOOTER *********************************************/
 
 footer {
     padding: 20px ;
@@ -216,6 +332,7 @@ footer {
     font-family: 'Caveat brush', 'lexend', sans-serif;
     background-image: linear-gradient( var(--secundary-color),var(--primary-color));
 }
+
 .social{
     display: flex;
     justify-content: center;
