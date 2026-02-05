@@ -8,9 +8,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 
         console.log("Timestamp capturado: " + timestampField.value);
     }
-})
-
-const openButtons = document.querySelectorAll(".open-modal");
+    const openButtons = document.querySelectorAll(".open-modal");
     const closeButtons = document.querySelectorAll(".close-modal");
 
 
@@ -29,4 +27,7 @@ const openButtons = document.querySelectorAll(".open-modal");
             button.closest("dialog").close();
         });
     });
+})
+
+
 
