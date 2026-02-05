@@ -1,0 +1,123 @@
+
+:root {
+    --primary-color: #f73642;    
+    --bg-color: #121212;        
+    --text-color: #F1FAEE;     
+    --secondary-bg: #1e1e1e;   
+    --heading-font: 'Bebas Neue', cursive;
+    --body-font: 'Lexend', sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2, h3 {
+    color: var(--primary-color);
+}
+h1, h2, h3{
+    font-family: var(--heading-font);
+    letter-spacing: 1px;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: var(--text-color); 
+    text-align: center;
+    padding: 2rem 1rem;
+}
+header p, footer p{
+ font-weight: 800;
+ font-size: 25px;
+}
+header h1 {
+    font-size: 3.5rem; 
+    color: var(--text-color);
+    margin: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--secondary-bg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    border-left: 8px solid var(--primary-color);
+}
+
+h2 {
+    font-size: 2.2rem;
+    border-bottom: 1px solid #444;
+    margin-top: 0;
+}
+
+
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 1.5rem;
+}
+
+.color-box {
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.color-primary { 
+    background-color: var(--primary-color); 
+    color: #000000; 
+}
+.color-secondary { 
+    background-color: var(--bg-color); 
+    color: #ffffff; 
+    border: 1px solid #555; 
+}
+.color-accent { 
+    background-color: var(--text-color); 
+    color: #000000; 
+}
+
+
+.wireframe-container {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.wireframe img {
+    width: 100%;
+    
+    height: auto;
+    border: 1px solid var(--primary-color);
+    display: block;
+}
+#mobile-view{
+    max-width: 250px;
+    justify-self: center;
+}
+
+@media (min-width: 600px) {
+    .wireframe-container {
+        grid-template-columns: 1fr  2fr;
+    }
+    #mobile-view{
+    justify-self: left;
+}
+}
