@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Javier Guerrero">
+    <meta name="description" content="Join the Maturín Chamber of Commerce. Become a member and grow your business network in Monagas.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Maturín Chamber of Commerce - Join Us">
+    <meta property="og:description" content="Official membership application for the Maturín Chamber of Commerce.">
+    <meta property="og:url" content="https://javierguerrero22.github.io/wdd231/chamber/join">
+    <meta property="og:image" content="https://javierguerrero22.github.io/wdd231/chamber/images/cathedral.webp">
+
+    <title>Maturín Chamber of Commerce - Join</title>
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="stylesheet" href="styles/chamber-extra-large.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=DM+Serif+Text:ital@0;1&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    
+    <script src="../scripts/date.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="images/cathedral.webp" alt="Site Logo" width="100" height="100">
+            <span>Maturín Chamber of Commerce</span>
+            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        </div>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-main">
+    <h1>Membership Application</h1>
+    <form method="get" action="thankyou.html" class="designOne">
+    <fieldset>
+        <legend>Applicant Information</legend>
+        
+        <label>First Name*
+            <input type="text" id="fname" name="first" required autocomplete="given-name" title="Enter your first name">
+        </label>
+
+        <label>Last Name*
+            <input type="text" id="lname" name="last" required autocomplete="family-name" title="Enter your last name">
+        </label>
+
+        <label>Organizational Title
+            <input type="text" id="job-title" name="title" autocomplete="organization-title" 
+                   title="Minimum 7 characters. Only letters, spaces, and hyphens allowed." 
+                   pattern="[A-Za-z\s\-]{7,}">
+        </label>
+
+        <label>Email Address*
+            <input type="email" id="email" name="email" required placeholder="example@domain.com" 
+                   title="Enter a valid email address" autocomplete="email">
+        </label>
+
+        <label>Mobile Phone Number*
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your phone number">
+        </label>
+   
+        <!-- <legend>Organization Details</legend> -->
+
+        <label>Business/Organization Name*
+            <input type="text" id="org-name" name="organization" required autocomplete="organization" title="Enter your company name">
+        </label>
+
+        <label>Membership Level*
+            <select id="membership" name="membership-level" required title="Select your membership level">
+                <option value="" selected disabled>Select a level...</option>
+                <option value="np">NP Membership (Non-profit - No cost)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+        </label>
+
+        <label>Organization Description
+            <textarea id="description" name="description" title="Briefly describe your organization" rows="4"></textarea>
+        </label>
+        <input type="hidden" id="timestamp" name="timestamp" value="">
+        <input type="submit" value="Submit My Application" class="submitBtn">
+    </fieldset>
+    </form>
+    <section class="membership-cards">
+    <h2>Membership Levels</h2>
+    <div class="card" id="card-np">
+        <h3>Non-Profit Membership Level</h3>
+        <button class="open-modal" data-modal="modal-np">Learn More</button>
+    </div>
+    <div class="card" id="card-bronze">
+        <h3>Bronze Membership Level</h3>
+        <button class="open-modal" data-modal="modal-bronze">Learn More</button>
+    </div>
+    <div class="card" id="card-silver">
+        <h3>Silver Membership Level</h3>
+        <button class="open-modal" data-modal="modal-silver">Learn More</button>
+    </div>
+    <div class="card" id="card-gold">
+        <h3>Gold Membership Level</h3>
+        <button class="open-modal" data-modal="modal-gold">Learn More</button>
+    </div>
+</section>
+
+<dialog id="modal-np">
+    <button class="close-modal">X</button>
+    <h2>Non-Profit Membership</h2>
+    <p><strong>Cost:</strong> Free</p>
+    <ul>
+        <li>Basic business directory listing</li>
+        <li>Access to community networking events</li>
+        <li>Quarterly newsletter subscription</li>
+    </ul>
+</dialog>
+
+<dialog id="modal-bronze">
+    <button class="close-modal">X</button>
+    <h2>Bronze Membership</h2>
+    <p><strong>Cost:</strong> $50/month</p>
+    <ul>
+        <li>Enhanced directory listing with logo</li>
+        <li>Social media shout-out upon joining</li>
+        <li>Discounts on Chamber training sessions</li>
+    </ul>
+</dialog>
+
+<dialog id="modal-silver">
+    <button class="close-modal">X</button>
+    <h2>Silver Membership</h2>
+    <p><strong>Cost:</strong> $150/month</p>
+    <ul>
+        <li>Everything in Bronze plus:</li>
+        <li>Spotlight position on the homepage</li>
+        <li>2 free tickets to the annual Gala</li>
+        <li>Access to VIP networking lounges</li>
+    </ul>
+</dialog>
+
+<dialog id="modal-gold">
+    <button class="close-modal">X</button>
+    <h2>Gold Membership</h2>
+    <p><strong>Cost:</strong> $300/month</p>
+    <ul>
+        <li>Everything in Silver plus:</li>
+        <li>Primary advertising banners on site</li>
+        <li>Dedicated spotlight article in monthly magazine</li>
+        <li>Unlimited event discounts for all employees</li>
+    </ul>
+</dialog>
+    
+
+</main>
+
+    <footer>
+        <div class="footer-info">
+            <h2>Maturín Chamber of Commerce</h2>
+            <p>El Silencio, Street 5</p>
+            <p>Maturín, Monagas, Venezuela</p>
+            <p>info@maturincc.org</p>
+            <p>(+58) 412-107-8456</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/profile.php?id=100006197227926" target="_blank">
+                <img id="facebook" src="../images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://github.com/javierguerrero22" target="_blank">
+                <img id="github" src="../images/github.svg" alt="Github">
+            </a>
+            <a href="https://www.linkedin.com/in/javier-alejandro-guerrero-jimenez/" target="_blank">
+                <img id="linkedin" src="../images/linkedin.svg" alt="Linkedin">
+            </a>
+        </div>
+        <div class="dev-info">
+            <p>WDD231 Class Project</p>
+            <p>Javier Guerrero</p>
+            <div class="current year">
+                <p>© <span id="year"></span> Maturín Chamber of comerce</p>
+            </div>
+            <p class="last modified" id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

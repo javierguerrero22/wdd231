@@ -90,6 +90,13 @@ h1{
 .business{
     padding: 0 50px;
 }
+.join-main {
+        padding: 40px 0 40px 30px; 
+    }
+
+    .designOne fieldset {
+        padding: 40px;
+    }
 
 footer{
         display: grid;
@@ -100,4 +107,42 @@ footer{
 .dev-info{
     padding-left: 16px;
 }
+.join-main {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr; 
+        gap: 30px;
+        align-items: start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .join-main h1{
+        grid-column: 1/3;
+        padding: 10px;
+        margin: 0;
+    }
+    .join-main fieldset {
+        
+        margin: 0; 
+    }
+
+    
+    .membership-cards {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .membership-cards h2 {
+        margin-top: 20px;
+    }
+    .thanks-main h1{
+        text-align: center;
+    }
+}
+@media (min-width: 650px){
+    .thanks-container{
+        margin: 40px auto;
+    }
 }

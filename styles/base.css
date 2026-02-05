@@ -158,7 +158,7 @@ section p{
 .filter button:hover{
     background-color: var(--third-color);
 }
-dialog {
+/* dialog {
   border: 1px solid rgb(0 0 0 / 10%);
   border-radius: .25rem;
   padding: 1rem;
@@ -178,7 +178,7 @@ dialog button {
   right: 23px;
   padding: .5rem 1rem;
   border: 1px solid rgb(0 0 0 / 10%);
-}
+} */
 /************************* Footer *************************/
 
 footer{
