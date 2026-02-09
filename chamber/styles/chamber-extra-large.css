@@ -33,6 +33,9 @@
     .business section{
         margin: 20px;
     }
-    
-    
+    #allplaces{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+   
 }

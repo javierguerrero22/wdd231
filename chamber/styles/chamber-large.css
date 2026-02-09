@@ -140,6 +140,29 @@ footer{
     .thanks-main h1{
         text-align: center;
     }
+    #allplaces div {
+        grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "photograph name"
+    "photograph description"
+    "photograph location"
+    "button button";
+}
+#allplaces div img{
+    width: 300px;
+    filter: brightness(0.9);
+        transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+        cursor: pointer;
+}
+#allplaces div figure{
+    max-width: 200px;
+    max-height: 300px;
+}
+#allplaces div img:hover {
+        filter: brightness(1.1);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        z-index: 10;
+    }
 }
 @media (min-width: 650px){
     .thanks-container{
