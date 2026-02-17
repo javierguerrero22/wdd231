@@ -218,6 +218,7 @@ main {
 .index img{
     width: 300px;
     max-width: 100%;
+    border-radius: 15px;
 }
 #intro{
     grid-area: intro;
@@ -242,9 +243,6 @@ main {
     text-align: center;
 }
 
-.index img{
-    border-radius: 15px;
-}
 
 .search-box {
     display: flex;
