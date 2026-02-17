@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiffMaster | Interactive Guitar Chord Library</title>
+    
+    <meta name="description" content="Master the fretboard with RiffMaster. Explore our interactive chromatic chord library, artist stories, and expert guitar tips.">
+    <meta name="author" content="Javier Guerrero">
+
+    <meta property="og:url" content="https://javierguerrero22.github.io/wdd231/final/">
+    <meta property="og:title" content="RiffMaster | Interactive Guitar Library">
+    <meta property="og:description" content="The ultimate chromatic guide for guitarists. Find chords, learn history, and level up your playing.">
+    <meta property="og:image" content="https://javierguerrero22.github.io/wdd231/final/images/logo.webp">
+    <link rel="icon" href="images/final.favicon.png">
+    <link rel="stylesheet" href="styles/final-base.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="../scripts/date.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="images/logo.webp" alt="Site Logo" width="100" height="100" loading="lazy">
+            <h1>RiffMaster</h1>
+            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        </div>
+         <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="index.html" class="current">Home</a></li>
+                    <li><a href="chords.html">Chords</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 600px)">
+            <img src="images/hero-large.webp" alt="Close up of guitar strings and fretboard" width="1200" height="600" class="hero-img">
+        </picture>
+    
+        <article class="hero-msg">
+            <h2>Master the Fretboard</h2>
+            <p>The ultimate chromatic chord guide for modern guitarists.</p>
+            <a href="chords.html" class="cta-button">Find Your Chord</a>
+        </article>
+    </div>
+
+    <div class="cards-container index">
+        <section class="card" id="intro">
+            <h3>Why RiffMaster?</h3>
+            <p>Forget messy songbooks. We provide a curated, high-precision database covering every key in the chromatic scale.</p>
+        </section>
+        
+        <section class="card" id="c-library">
+            <img src="images/card-chromatic.webp" alt="Full Chromatic Scale" loading="lazy">
+            <h3>Full Scale Access</h3>
+            <p>From C to B, including all sharps and flats. Every major, minor, and dominant voicing at your fingertips.</p>
+        </section>
+
+        <section class="card" id="i-tool">
+            <img src="images/card-interactive.webp" alt="Digital Chord Search" loading="lazy">
+            <h3>Smart Search</h3>
+            <p>Search by name or type and get instant fingering diagrams and fret positions.</p>
+        </section>
+
+        <section class="card" id="p-learning">
+            <img src="images/card-artist.webp" alt="Classic vintage guitar against a studio wall" loading="lazy">
+            <h3>Artist Spotlights</h3>
+            <p>Go beyond the strings. Discover the stories, influences, and journeys of the guitarists who changed the world of music forever.</p>
+        </section>
+
+        <section class="card" id="riff-weekly">
+        </section>
+    </div>
+</main>
+
+    <footer>    
+        <div class="current year"></div>
+        <p>© <span id="year"></span> | Javier Guerrero | Venezuela</p>
+            </div>
+            <p class="last modified" id="lastModified"></p>
+        <p><a href="#">Video Demo</a></p>
+    </footer>
+</body>
+</html>

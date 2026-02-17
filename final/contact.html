@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Community | RiffMaster Membership</title>
+    
+    <meta name="description" content="Become a RiffMaster member today. Choose your level from Fan to Legend and get exclusive access to chord libraries, artist stories, and pro tips.">
+    <meta name="author" content="Javier Guerrero">
+
+    <meta property="og:url" content="https://javierguerrero22.github.io/wdd231/final/contact.html">
+    <meta property="og:title" content="Join RiffMaster | Choose Your Membership Level">
+    <meta property="og:description" content="Ready to level up? Sign up for our Rockstar, Virtuoso, or Legend memberships and master the guitar.">
+    <meta property="og:image" content="https://javierguerrero22.github.io/wdd231/final/images/logo.webp">
+    
+    <link rel="icon" href="images/final.favicon.png">
+    <link rel="stylesheet" href="styles/final-base.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+    <link rel="stylesheet" href="styles/final-extra-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="../scripts/date.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/contact.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="images/logo.webp" alt="Site Logo" width="100" height="100" loading="lazy">
+            <h1>Join Us!</h1>
+            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        </div>
+         <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chords.html">Chords</a></li>
+                    <li><a href="contact.html" class="current">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+      <main class="join-main">
+    <h1>Membership Application</h1>
+    <form method="get" action="thankyou.html" class="designOne">
+    <fieldset>
+        <legend>Applicant Information</legend>
+        
+        <label>First Name*
+            <input type="text" id="fname" name="first" required autocomplete="given-name" title="Enter your first name">
+        </label>
+
+        <label>Last Name*
+            <input type="text" id="lname" name="last" required autocomplete="family-name" title="Enter your last name">
+        </label>
+
+        <!-- <label>Organizational Title
+            <input type="text" id="job-title" name="title" autocomplete="organization-title" 
+                   title="Minimum 7 characters. Only letters, spaces, and hyphens allowed." 
+                   pattern="[A-Za-z\s\-]{7,}">
+        </label> -->
+
+        <label>Email Address*
+            <input type="email" id="email" name="email" required placeholder="example@domain.com" 
+                   title="Enter a valid email address" autocomplete="email">
+        </label>
+
+        <label>Mobile Phone Number*
+            <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your phone number">
+        </label>
+   
+        <!-- <legend>Organization Details</legend> -->
+
+        <!-- <label>Business/Organization Name*
+            <input type="text" id="org-name" name="organization" required autocomplete="organization" title="Enter your company name">
+        </label> -->
+
+        <label>Membership Level*
+            <select id="membership" name="membership-level" required title="Select your membership level">
+                <option value="" selected disabled>Select a level...</option>
+                <option value="Fan">Fan Membership (Community - Free)</option>
+                <option value="Rockstar">Rockstar Membership ($10/mo)</option>
+                <option value="Virtuoso">Virtuoso Membership ($25/mo)</option>
+                <option value="Legend">Legend Membership ($50/mo)</option>
+            </select>
+        </label>
+
+        <!-- <label>Organization Description
+            <textarea id="description" name="description" title="Briefly describe your organization" rows="4"></textarea>
+        </label> -->
+        <input type="hidden" id="timestamp" name="timestamp" value="">
+        <input type="submit" value="Submit My Application" class="submitBtn">
+    </fieldset>
+    </form>
+    <section class="membership-cards">
+    <h2>Membership Levels</h2>
+    <div class="card-levels" id="card-np">
+        <h3>Riff Fan Membership</h3>
+        <button class="open-modal" data-modal="modal-np">Learn More</button>
+    </div>
+    <div class="card-levels" id="card-bronze">
+        <h3>Rockstar Membership</h3>
+        <button class="open-modal" data-modal="modal-bronze">Learn More</button>
+    </div>
+    <div class="card-levels" id="card-silver">
+        <h3>Virtuoso Membership</h3>
+        <button class="open-modal" data-modal="modal-silver">Learn More</button>
+    </div>
+    <div class="card-levels" id="card-gold">
+        <h3>Legend Membership</h3>
+        <button class="open-modal" data-modal="modal-gold">Learn More</button>
+    </div>
+</section>
+
+<dialog id="modal-np">
+    <button class="close-modal">X</button>
+    <h2 class="modal-title">Riff Fan Membership</h2>
+    <p class="modal-cost"><strong>Cost:</strong> Free</p>
+    <ul class="modal-features">
+        <li>Unlimited chord & riff database access</li>
+        <li>Basic practice tracker tool</li>
+        <li>Community forum access to share tips</li>
+    </ul>
+</dialog>
+
+<dialog id="modal-bronze">
+    <button class="close-modal">X</button>
+    <h2 class="modal-title">Rockstar Membership</h2>
+    <p class="modal-cost"><strong>Cost:</strong> $10/month</p>
+    <ul class="modal-features">
+        <li>Everything in Fan plus:</li>
+        <li>Interactive chord diagrams with audio samples</li>
+        <li>Early access to new artist riff collections</li>
+        <li>Ad-free experience on all learning tools</li>
+    </ul>
+</dialog>
+
+<dialog id="modal-silver">
+    <button class="close-modal">X</button>
+    <h2 class="modal-title">Virtuoso Membership</h2>
+    <p class="modal-cost"><strong>Cost:</strong> $25/month</p>
+    <ul class="modal-features">
+        <li>Everything in Rockstar plus:</li>
+        <li>Monthly live Masterclass with pro guitarists</li>
+        <li>Personalized practice routine generator</li>
+        <li>Backing tracks in high-fidelity (WAV/MP3)</li>
+    </ul>
+</dialog>
+
+<dialog id="modal-gold">
+    <button class="close-modal">X</button>
+    <h2 class="modal-title legend-text">Legend Membership</h2>
+    <p class="modal-cost"><strong>Cost:</strong> $50/month</p>
+    <ul class="modal-features">
+        <li>Everything in Virtuoso plus:</li>
+        <li>1-on-1 monthly video session with a coach</li>
+        <li>Premium badge in the community ("The Shredder")</li>
+        <li>VIP tickets for our annual RiffMaster Live Event</li>
+    </ul>
+</dialog>
+    
+
+</main>
+
+    <footer>    
+        <div class="current year"></div>
+        <p>© <span id="year"></span> | Javier Guerrero | Venezuela</p>
+            </div>
+            <p class="last modified" id="lastModified"></p>
+        <p><a href="#">Video Demo</a></p>
+    </footer>
+</body>
+</html>

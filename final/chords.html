@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chord Library | RiffMaster Interactive Guitar Guide</title>
+    
+    <meta name="description" content="Explore our comprehensive guitar chord library. From basic power chords to complex jazz voicings, find every diagram in the chromatic scale with RiffMaster.">
+    <meta name="author" content="Javier Guerrero">
+
+    <meta property="og:url" content="https://javierguerrero22.github.io/wdd231/final/chords.html">
+    <meta property="og:title" content="RiffMaster Chord Library - Find Any Fingering">
+    <meta property="og:description" content="Search our interactive database for major, minor, 7th, and suspended chords. High-quality diagrams for all guitar levels.">
+    <meta property="og:image" content="https://javierguerrero22.github.io/wdd231/final/images/logo.webp">
+
+    <link rel="icon" href="images/final.favicon.png">
+    <link rel="stylesheet" href="styles/final-base.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="../scripts/date.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/chords.js" type="module"></script>
+    <script src="scripts/artists.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="images/logo.webp" alt="Site Logo" width="100" height="100" loading="lazy">
+            <h1>Chord Library</h1>
+            <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        </div>
+         <nav id="nav-bar" class="navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="chords.html" class="current">Chords</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="chords">
+        <section class="card">
+            <h3>Chord Explorer</h3>
+            <p>Type a chord name like <strong>C, Am, G7, or Dm7</strong>.</p>
+            <div class="search-box">
+                <input type="text" id="chordInput" placeholder="Ex: Cmaj7">
+                <button id="searchBtn" class="cta-button">Get Chord</button>
+            </div>
+        </section>
+        <div id="chord-results"></div>
+        
+        <section class="card">
+            <h3>Search Artist Info</h3>
+            <div class="search-box">
+                <input type="text" id="artistInput" placeholder="Ex: Black Sabbath">
+                <button id="artistBtn" class="cta-button">Search Artist</button>
+            </div>
+            
+        </section>
+        <div id="artist-results" class="cards-container"></div>
+
+    </main>
+
+    <footer>    
+        <div class="current year"></div>
+        <p>© <span id="year"></span> | Javier Guerrero | Venezuela</p>
+            </div>
+            <p class="last modified" id="lastModified"></p>
+        <p><a href="#">Video Demo</a></p>
+    </footer>
+</body>
+</html>
