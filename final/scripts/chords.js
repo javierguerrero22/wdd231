@@ -31,6 +31,8 @@ async function getChordData() {
 
         if (foundChord) {
             renderChordCard(foundChord);
+            saveLastChord(foundChord.name); 
+
         } else {
             resultsContainer.innerHTML = `
                 <section class="card" id='chord-card error'>
@@ -68,3 +70,32 @@ chordInput.addEventListener('keypress', (e) => {
         getChordData();
     }
 });
+
+const visitDisplay = document.querySelector("#visit-count");
+const lastChordDisplay = document.querySelector("#last-chord");
+
+
+let numVisits = Number(window.localStorage.getItem("visits-ls")) || 0;
+if (numVisits > 0) {
+    visitDisplay.textContent = `Welcome back! You have visited us ${numVisits} times.`;
+} else {
+    visitDisplay.textContent = "This is your first time here! Let's find some chords.";
+}
+numVisits++;
+localStorage.setItem("visits-ls", numVisits);
+
+
+export function saveLastChord(chordName) {
+    localStorage.setItem("last-chord-ls", chordName);
+    displayLastChord();
+}
+
+function displayLastChord() {
+    const savedChord = localStorage.getItem("last-chord-ls");
+    if (savedChord && lastChordDisplay) {
+        lastChordDisplay.textContent = `Last practiced: ${savedChord}`;
+    }
+}
+
+
+displayLastChord();
