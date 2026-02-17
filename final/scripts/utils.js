@@ -1,4 +1,3 @@
-// Funciones de utilidad para Local Storage
 export function saveLastChord(chordName, displayElement) {
     localStorage.setItem("last-chord-ls", chordName);
     if (chordName && displayElement) {
