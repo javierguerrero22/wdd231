@@ -30,7 +30,7 @@ function displayArtist(artist) {
             <h2>${artist.strArtist}</h2>
             <p><strong>Genre:</strong> ${artist.strGenre}</p>
             <p><strong>Origin:</strong> ${artist.strCountry}</p>
-            <p style="font-size: 0.9rem; margin-top:10px;">${artist.strBiographyEN}</p>
+            <p style="font-size: 0.9rem; margin-top:10px;">${artist.strBiography}</p>
         </article>
     `;
 }
